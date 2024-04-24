@@ -12,14 +12,14 @@ export const StyledSectionBigHeading = styled(forwardRef((props, ref) => <h1 {..
 export const StyledSectionHeading = styled(forwardRef((props, ref) => <h2 {...props} ref={ref} />))`
   font-family: Poppins;
   font-size: 2.5rem;
-  line-height: 4.375rem;
+  line-height: 3.8rem;
   font-weight: 600;
 `;
 
 export const StyledSectionSubheading = styled(forwardRef((props, ref) => <h3 {...props} ref={ref} />))`
   font-family: Poppins;
   font-size: 1.25rem;
-  line-height: 1.875rem;
+  line-height: 1.3rem;
   font-weight: 300;
 `;
 
