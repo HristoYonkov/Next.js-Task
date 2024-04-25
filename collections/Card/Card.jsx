@@ -4,9 +4,7 @@ import { StyledCard } from "./elements";
 export const Card = ({ children, ...props }) => {
   return (
     <StyledCard {...props}>
-        asdassda
-        asdassdaa
-        asdas
+        {children}
     </StyledCard>
   );
 };
