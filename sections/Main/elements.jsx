@@ -33,26 +33,44 @@ export const StyledDescription = styled((props) => <SectionSubheading {...props}
 
 export const StyledContentContainer = styled(({ ...props }) => <div {...props} />)`
   display: flex;
-  // flex-direction: column;
   margin-top: 40px;
   gap: 50px;
 
-  // display: flex;
-  // flex-direction: column;
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
   width: 420px;
   heigt: 520px;
-  // position: relative;
-  // left: -90px;
+  
   img {
     object-fit: contain;
     object-position: right;
   }
+
   background-image: url("/img/background.png");
   background-size: cover;
   background-position: -40px;
+  
+  @media screen and (max-width: 1024px) {
+    width: 320px;
+    heigt: 420px;
+    position: relative;
+    left: -20px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    width: 260px;
+    heigt: 360px;
+    position: relative;
+    left: -10px;
+    background-position: -30px;
+  }
+
 `;
 
 export const StyledCardContentContainer = styled(({ ...props }) => <div {...props} />)`
@@ -63,6 +81,11 @@ export const StyledCardContentContainer = styled(({ ...props }) => <div {...prop
   article:nth-child(2n) {
     width: 380px;
     background-color: rgb(244 244 244);
+
+    @media screen and (max-width: 480px) {
+      width: 300px;
+      height: 110px;
+    }
   }
   article:nth-child(3n) {
     width: 400px;
@@ -73,29 +96,43 @@ export const StyledCardContentContainer = styled(({ ...props }) => <div {...prop
       color: dodgerblue;
       text-decoration: underline;
     }
+
+    @media screen and (max-width: 480px) {
+      width: 320px;
+      height: 110px;
+    }
   }
 `;
 
 export const StyledCardImageContainer = styled(({ ...props }) => <div {...props} />)`
-  width: 100px;
+  width: 30%;
   img {
-    // width: 100%;
     object-fit: cover;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 15px 0 0 0;
   }
 `;
 
 export const StyledCardArticleWrapper = styled(({ ...props }) => <div {...props} />)`
-  width: 70%;
+  width: 80%;
   height: auto;
   border-radius: 12px;
 `;
 export const StyledTinyHeading = styled((props) => <SectionTinyHeading {...props} />)`
   margin: 10px 0 0 10px;
+  @media screen and (max-width: 480px) {
+    margin: 10px 0 0 0;
+  }
 `;
 
 export const StyledParagraph = styled((props) => <SectionParagraph {...props} />)`
   margin: 10px 0 0 10px;
   span {
     font-weight: 700;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin: 0 0 0 0;
   }
 `;
