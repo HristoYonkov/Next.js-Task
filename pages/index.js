@@ -11,6 +11,18 @@ const mainProps = {
   image: { src: '/img/video.png', alt: 'video', width: 0, height: 0 },
   title: 'Managed agency selection.',
   description: 'Strengthen your onboarding process',
+  imageBg: { src: '/img/background.png', alt: 'bg-image', width: 0, height: 0 },
+  imagesCard:{
+    one:{
+      src:"/img/Brief.png",
+    },
+    two:{
+      src:"/img/Search.png",
+    },
+    three:{
+      src:"/img/Pitch.png",
+    }
+  }
 };
 
 export default function Home() {
