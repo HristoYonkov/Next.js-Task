@@ -32,14 +32,14 @@ export const StyledSectionInnerHeading = styled(forwardRef((props, ref) => <h4 {
 
 export const StyledSectionTinyHeading = styled(forwardRef((props, ref) => <h5 {...props} ref={ref} />))`
   font-family: Poppins;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   line-height: 1.125rem;
-  font-weight: 300;
+  font-weight: 600;
 `;
 
 export const StyledSectionParagraph = styled((props) => <p {...props} />)`
   font-family: Poppins;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  font-weight: 500;
 `;
