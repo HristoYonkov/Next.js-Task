@@ -109,7 +109,7 @@ export const StyledCardContentContainer = styled(({ ...props }) => <div {...prop
 `;
 
 export const StyledCardImageContainer = styled(({ ...props }) => <div {...props} />)`
-  width: 30%;
+  width: 98px;
   img {
     object-fit: cover;
     border-radius: 12px;
