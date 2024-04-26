@@ -46,7 +46,7 @@ export const StyledContentContainer = styled(({ ...props }) => <div {...props} /
 export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
   width: 420px;
   heigt: 520px;
-  
+
   img {
     object-fit: contain;
     object-position: right;
@@ -108,6 +108,7 @@ export const StyledCardImageContainer = styled(({ ...props }) => <div {...props}
   width: 30%;
   img {
     object-fit: cover;
+    border-radius: 12px;
   }
   @media screen and (max-width: 480px) {
     margin: 15px 0 0 0;
@@ -115,6 +116,7 @@ export const StyledCardImageContainer = styled(({ ...props }) => <div {...props}
 `;
 
 export const StyledCardArticleWrapper = styled(({ ...props }) => <div {...props} />)`
+  position: relative;
   width: 80%;
   height: auto;
   border-radius: 12px;
@@ -134,5 +136,23 @@ export const StyledParagraph = styled((props) => <SectionParagraph {...props} />
 
   @media screen and (max-width: 480px) {
     margin: 0 0 0 0;
+  }
+`;
+
+export const StyledSpanText = styled((props) => <span {...props} />)`
+  position: absolute;
+  display: none;
+  top: 10px;
+  right: -73px;
+  color: red;
+  font-weight: 600;
+  transform: rotate(10deg);
+  
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+  @media screen and (max-width: 389px) {
+    font-size: 0.8rem;
+    right: -50px;
   }
 `;
