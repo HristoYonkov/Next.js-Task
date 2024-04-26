@@ -13,6 +13,7 @@ import {
   StyledCardArticleWrapper,
   StyledTinyHeading,
   StyledParagraph,
+  StyledSpanText,
 } from "./elements";
 
 export const Main = ({ image, title, description, imageBg, imagesCard, ...props }) => {
@@ -40,6 +41,7 @@ export const Main = ({ image, title, description, imageBg, imagesCard, ...props 
 
             <StyledCardArticleWrapper>
               <StyledTinyHeading>Brief</StyledTinyHeading>
+              <StyledSpanText>link to brief<br/>generator???</StyledSpanText>
               <StyledParagraph>
                 Complete <span>brief writing or<br/> simple guidance</span> on what to include, we've got you covered.
               </StyledParagraph>
