@@ -8,7 +8,6 @@ export const StyledCard = styled(({ ...props }) => <article {...props} />)`
   height: 110px;
   background-color: rgb(249 249 249);
   border-radius: 12px;
-  overflow: hidden;
   @media screen and (max-width: 480px) {
     width: 280px;
     height: 110px;
