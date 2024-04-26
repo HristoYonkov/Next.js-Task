@@ -13,6 +13,10 @@ export const StyledCardArticle = styled((props) => <Card {...props} variant="con
 
 export const StyledContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
   align-items: center;
+  margin-top: 50px;
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+  }
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
